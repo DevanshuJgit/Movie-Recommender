@@ -40,18 +40,18 @@ if st.button('Recommend'):
     name, poster = recommend(selected_name)
     col1, col2, col3, col4, col5 = st.columns(5)
     with col1:
-        st.header(name[0])
+        st.text(name[0])
         st.image(poster[0])
     with col2:
-        st.header(name[1])
+        st.text(name[1])
         st.image(poster[1])
     with col3:
-        st.header(name[2])
+        st.text(name[2])
         st.image(poster[2])
     with col4:
-        st.header(name[3])
+        st.text(name[3])
         st.image(poster[3])
     with col5:
-        st.header(name[4])
+        st.text(name[4])
         st.image(poster[4])
     
