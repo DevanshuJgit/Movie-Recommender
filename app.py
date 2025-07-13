@@ -38,8 +38,7 @@ selected_name = st.selectbox(
 
 if st.button('Recommend'):
     name, poster = recommend(selected_name)
-    st.text(name)
-    col1, col2, col3, col4, col5 = st.beta_columns(5)
+    col1, col2, col3, col4, col5 = st.columns(5)
     with col1:
         st.header(name[0])
         st.image(poster[0])
